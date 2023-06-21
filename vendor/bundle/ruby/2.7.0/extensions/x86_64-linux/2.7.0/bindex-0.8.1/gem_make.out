@@ -1,0 +1,15 @@
+current directory: /home/paloma/Documentos/SSCatFacts/SSCatFacts/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20230621-33120-l8n7n8.rb extconf.rb
+creating Makefile
+
+current directory: /home/paloma/Documentos/SSCatFacts/SSCatFacts/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/paloma/Documentos/SSCatFacts/SSCatFacts/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/paloma/Documentos/SSCatFacts/SSCatFacts/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20230621-33120-1lozex8/skiptrace/internal
