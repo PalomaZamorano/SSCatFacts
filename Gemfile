@@ -48,6 +48,8 @@ gem "bootsnap", require: false
 
 gem 'pry-rails'
 
+gem 'httparty'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
