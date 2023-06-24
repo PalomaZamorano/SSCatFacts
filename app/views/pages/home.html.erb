@@ -11,7 +11,8 @@
             <a href="<%= url_for(fact_cats_path) %>" class="btn btn-primary btn-lg" role="button" aria-disabled="true">!Pincha aqui para conocer más datos! <i class="fas fa-cat"></i></a>
         </div>
         <br>
-        <h2 class="font-weight-bold text-center">Facts más populares</h2>
+         <% @fact_cats = FactCat.all.sort_by { |fact_cat| fact_cat.clicks }.reverse.first(5)  %>
+         <%= render template: "fact_cats/index", locals: {favorite: true, titulo: 'Facts más populares', ranking: true } %>
     <% else %>
         <h3 class="font-weight-normal text-center">
             ups! no has iniciado sesión

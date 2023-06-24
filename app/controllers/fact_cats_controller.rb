@@ -1,19 +1,19 @@
 require 'httparty'
 
 class FactCatsController < ApplicationController
-    include HTTParty
+    include HTTParty;
 
     def index
         @fact_cats = FactCat.all
         get_fact_cat(0)
-        render 'index', locals: { favorite: false }
+        render 'index', locals: { favorite: true, titulo: 'Nuestros Facts Cats para ti', ranking: false }
     end
 
     def favorite
         flash[:error] = 'ups para ver tus favoritos debes estar registrado'
         return if !current_user
-        @fact_cats = current_user.fact_cats
-        render 'index', locals: { favorite: true }
+        @fact_cats = current_user.fact_cats.first(10)
+        render 'index', locals: { favorite: false, titulo: 'Tus Fact Cats favoritos', ranking: false}
     end
 
     def increment_click_count
