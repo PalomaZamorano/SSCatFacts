@@ -50,6 +50,10 @@ gem 'pry-rails'
 
 gem 'httparty'
 
+# Bootstrap
+gem 'bootstrap', '~> 4.3.1'
+gem 'jquery-rails'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
