@@ -10,7 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_22_050246) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_23_014616) do
+  create_table "fact_cats", force: :cascade do |t|
+    t.string "fact"
+    t.integer "length"
+    t.integer "clicks", default: 0, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "fact_cats_users", id: false, force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "fact_cat_id", null: false
+    t.index ["fact_cat_id", "user_id"], name: "index_fact_cats_users_on_fact_cat_id_and_user_id"
+    t.index ["user_id", "fact_cat_id"], name: "index_fact_cats_users_on_user_id_and_fact_cat_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
