@@ -1,0 +1,35 @@
+<div class= 'd-flex justify-content-center'>
+    <div class="row">
+        <div class="col text-center">
+            <h1>Fact Cats</h1>
+        <div/>
+        <div class="col border">
+            <% if @fact_cats %>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Facts</th>
+                            <% unless favorite%>
+                                <th>Ranking</th>
+                            <% end %>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% @fact_cats.each do |fact| %>
+                            <tr>
+                                <td><%= fact.fact %></td>
+                                <% unless favorite%>
+                                    <td>
+                                        <%= button_to fact_cats_count_click_path(fact_cat_id: fact.id), method: :post, class: "btn btn-warning" do %>
+                                            <i class="fa fa-star"></i>
+                                        <% end %>
+                                    </td>
+                                <% end %>
+                            </tr>
+                        <% end %>
+                    </tbody>
+                </table>
+            <% end %>
+        <div/>
+    <div/>
+<div/>
