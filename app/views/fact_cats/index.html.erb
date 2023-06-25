@@ -1,0 +1,40 @@
+<div class= 'd-flex justify-content-center'>
+    <div class="row">
+        <div class="col text-center">
+            <h2 class="font-weight-bold text-center"><%=titulo%></h2>
+        <div/>
+        <div class="col border">
+            <% if @fact_cats %>
+                <table  class="table table-striped">
+                    <thead>
+                            <% if ranking%>
+                                <th>Ranking</th>
+                                <th>Facts</th>
+                                <th>Marcar favorito</th>
+                            <% else %>
+                                <th>Facts</th>
+                            <% end %>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% @fact_cats.each_with_index do |fact, index| %>
+                            <tr>
+                                <% if ranking%>
+                                    <td><%= index + 1 %></td>
+                                <% end %>
+                                <td><%= fact.fact %></td>
+                                <% if favorite%>
+                                    <td>
+                                        <%= button_to fact_cats_count_click_path(fact_cat_id: fact.id), method: :post, class: "btn btn-warning" do %>
+                                            <i class="fa fa-star"></i>
+                                        <% end %>
+                                    </td>
+                                <% end %>
+                            </tr>
+                        <% end %>
+                    </tbody>
+                </table>
+            <% end %>
+        <div/>
+    <div/>
+<div/>

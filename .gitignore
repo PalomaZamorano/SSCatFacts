@@ -33,3 +33,18 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore other generated files
+/node_modules
+
+# Ignore dependencies managed by Bundler
+/vendor/bundle
+
+# Ignore local development configuration
+/config/environments/*.local
+
+
+# Ignore sensitive or environment-specific information
+/config/database.yml
+/config/application.yml
+/config/master.key
