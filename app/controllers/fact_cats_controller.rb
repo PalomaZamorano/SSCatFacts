@@ -5,13 +5,15 @@ class FactCatsController < ApplicationController
 
     def index
         @fact_cats = FactCat.all
-        get_fact_cat(0)
+        get_fact_cat(2)
         render 'index', locals: { favorite: true, titulo: 'Nuestros Facts Cats para ti', ranking: false }
     end
 
     def favorite
-        flash[:error] = 'ups para ver tus favoritos debes estar registrado'
-        return if !current_user
+        if !current_user
+            flash[:error] = 'ups para ver tus favoritos debes estar registrado'
+            return redirect_to root_path
+        end
         @fact_cats = current_user.fact_cats.first(10)
         render 'index', locals: { favorite: false, titulo: 'Tus Fact Cats favoritos', ranking: false}
     end

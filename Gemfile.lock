@@ -142,6 +142,9 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.18.1)
+    minitest-rails (7.0.0)
+      minitest (~> 5.10)
+      railties (~> 7.0.0)
     msgpack (1.7.1)
     multi_xml (0.6.0)
     net-imap (0.3.6)
@@ -158,6 +161,7 @@ GEM
       racc (~> 1.4)
     orm_adapter (0.5.0)
     popper_js (1.16.1)
+    power_assert (2.0.3)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -184,6 +188,10 @@ GEM
       activesupport (= 7.0.5)
       bundler (>= 1.15.0)
       railties (= 7.0.5)
+    rails-controller-testing (1.0.5)
+      actionpack (>= 5.0.1.rc1)
+      actionview (>= 5.0.1.rc1)
+      activesupport (>= 5.0.1.rc1)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -228,6 +236,10 @@ GEM
     sqlite3 (1.6.3-x86_64-linux)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
+    test-unit (3.6.1)
+      power_assert
+    test-unit-runner-tap (1.1.2)
+      test-unit
     thor (1.2.2)
     tilt (2.2.0)
     timeout (0.4.0)
@@ -270,13 +282,18 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   jquery-rails
+  minitest
+  minitest-rails
   pry-rails
   puma (~> 5.0)
+  rack-test
   rails (~> 7.0.5)
+  rails-controller-testing
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
+  test-unit-runner-tap
   turbo-rails
   tzinfo-data
   web-console
