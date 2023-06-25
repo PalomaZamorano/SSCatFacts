@@ -26,7 +26,7 @@ class FactCatsController < ApplicationController
         fact_cat.users << current_user
         if fact_cat.save
             flash[:notice] = 'La fact se ha marcado cómo favorita'
-            redirect_to fact_cats_path
+            redirect_to root_path
         else
             flash[:error] = 'La fact no se ha podido marcar cómo favorita'
         end
