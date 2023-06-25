@@ -48,6 +48,12 @@ gem "bootsnap", require: false
 
 gem 'pry-rails'
 
+gem 'httparty'
+
+# Bootstrap
+gem 'bootstrap', '~> 4.3.1'
+gem 'jquery-rails'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -57,6 +63,11 @@ gem 'pry-rails'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'minitest'
+  gem "test-unit-runner-tap"
+  gem "minitest-rails"
+  gem 'rack-test'
+  gem 'rails-controller-testing'
 end
 
 group :development do
