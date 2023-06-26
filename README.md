@@ -65,24 +65,24 @@ ruby -Ilib:test user_test.rb
 
 ## Diagrama de clases UML
 
-![image](https://github.com/PalomaZamorano/SSCatFacts/assets/31086486/213f18c0-7d4e-4bf6-9027-eecb1fdbc811)
+![image](app/assets/images/document/uml.png)
 
 
 ## Vistas relevantes
 
 http://0.0.0.0:3000/ sin login
 
-![image](https://github.com/PalomaZamorano/SSCatFacts/assets/31086486/b99a41a8-702a-49a2-a38c-d008059ba920)
+![image](app/assets/images/document/home_not_user.png)
 
 http://0.0.0.0:3000/ con login 
 
-![image](https://github.com/PalomaZamorano/SSCatFacts/assets/31086486/6eeeefd1-e179-484b-a30d-797ed7a862a1)
+![image](app/assets/images/document/home.png)
 
 http://0.0.0.0:3000/fact_cats
 
-![image](https://github.com/PalomaZamorano/SSCatFacts/assets/31086486/00ce4954-6e77-4ebd-b2c9-029f73b16857)
+![image](app/assets/images/document/fact_cats.png)
 
 http://0.0.0.0:3000/fact_cats_favorite
 
-![image](https://github.com/PalomaZamorano/SSCatFacts/assets/31086486/ea69b90b-6e2e-4da9-81a2-191af14e26d2)
+![image](app/assets/images/document/favorite_cats.png)
 
