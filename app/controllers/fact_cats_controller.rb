@@ -14,7 +14,7 @@ class FactCatsController < ApplicationController
             flash[:error] = 'ups para ver tus favoritos debes estar registrado'
             return redirect_to root_path
         end
-        @fact_cats = current_user.fact_cats.first(10).uniq
+        @fact_cats = current_user.fact_cats.uniq
         render 'index', locals: { favorite: false, titulo: 'Tus Fact Cats favoritos', ranking: false}
     end
 
