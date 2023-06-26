@@ -54,6 +54,8 @@ gem 'httparty'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 
+gem 'mini_racer', '~> 0.8.0'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
