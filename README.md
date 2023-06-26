@@ -65,20 +65,24 @@ ruby -Ilib:test user_test.rb
 
 ## Diagrama de clases UML
 
-![image-20230626174738824](/home/paloma/.config/Typora/typora-user-images/image-20230626174738824.png)
-
+![image](https://github.com/PalomaZamorano/SSCatFacts/assets/31086486/213f18c0-7d4e-4bf6-9027-eecb1fdbc811)
 
 
 ## Vistas relevantes
 
-http://0.0.0.0:3000/
+http://0.0.0.0:3000/ sin login
 
-![image-20230626170056494](/home/paloma/.config/Typora/typora-user-images/image-20230626170056494.png)
+![image](https://github.com/PalomaZamorano/SSCatFacts/assets/31086486/b99a41a8-702a-49a2-a38c-d008059ba920)
+
+http://0.0.0.0:3000/ con login 
+
+![image](https://github.com/PalomaZamorano/SSCatFacts/assets/31086486/6eeeefd1-e179-484b-a30d-797ed7a862a1)
 
 http://0.0.0.0:3000/fact_cats
 
-![image-20230626170209060](/home/paloma/.config/Typora/typora-user-images/image-20230626170209060.png)
+![image](https://github.com/PalomaZamorano/SSCatFacts/assets/31086486/00ce4954-6e77-4ebd-b2c9-029f73b16857)
 
 http://0.0.0.0:3000/fact_cats_favorite
 
-![image-20230626170302564](/home/paloma/.config/Typora/typora-user-images/image-20230626170302564.png)
+![image](https://github.com/PalomaZamorano/SSCatFacts/assets/31086486/ea69b90b-6e2e-4da9-81a2-191af14e26d2)
+
